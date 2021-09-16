@@ -18,8 +18,7 @@ console.log(value.substring(0,5))
 
 let quality = 'Murtuza is a good teacher'
 console.log(quality.slice(0))
-console.log(quality.slice(7))
-console.log(quality.slice(11.3))
+console.log(quality.slice(12))
 
 //Check if the string contains a word Script using includes() method 
 let fullname = 'Surbhi Sahu'
@@ -101,9 +100,31 @@ console.log(repet.repeat('2'))
 // Check if 'on' is found in both python and jargon 
 
 let find='python and jargon'
-console.log(find.match('on'))
+console.log(find.includes('on'))
 
 //I hope this course is not full of jargon. Check if jargon is in the sentence. 
 
 let sent='I hope this course is not full of jargon'
-console.log(sent.search('jargon'))
+console.log(sent.includes('jargon'))
+
+//Access the 'JavaScript' string characters using a random number. 
+
+/*/ Use console.log() and escape characters to print the following pattern. 
+ 1 1 1 1 1 
+2 1 2 4 8 
+3 1 3 9 27 
+4 1 4 16 64 
+5 1 5 25 125 */
+
+let esc='o 1 1 1 1 1\n 2 1 2 4 8\n 3 1 3 9 27\n 4 1 4 16 64\n 5 1 5 25 125\n '
+console.log(esc)
+
+/*Use substr to slice out the phrase because because because from the following sentence: 'You cannot 
+end a sentence with because because because is a conjunction */
+
+let senten='You cannot end a sentence with because because because is a conjunction'
+console.log(senten.substr(30,25))
+
+
+
+
